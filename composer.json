@@ -11,5 +11,9 @@
             "name": "dsedra"
         }
     ],
-    "require": {}
+    "require": {},
+    "bin": [
+        "bin/brain-games"
+    ],
+    "license": "MIT"
 }
