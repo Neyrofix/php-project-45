@@ -1,0 +1,15 @@
+{
+    "name": "hexlet/code",
+    "description": "first project on hexlet",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "dsedra"
+        }
+    ],
+    "require": {}
+}
