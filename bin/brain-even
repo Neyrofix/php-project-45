@@ -1,0 +1,31 @@
+#!/usr/bin/php
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use BrainGames\Cli;
+
+use function cli\line;
+use function cli\prompt;
+
+$name = Cli\greating();
+
+$arr_of_num = [15, 6, 7];
+line('Answer "yes" if the number is even, otherwise answer "no".');
+$i = 0;
+foreach ($arr_of_num as $num) {
+    line("Question: {$num}");
+    $right = ($num % 2 === 0) ? 'yes' : 'no';
+    $ans = prompt('Your answer');
+    if ($right === $ans) {
+        line('Correct!');
+    } else {
+        line("'{$ans}' is wrong answer ;(. Correct answer was '$right'.");
+        line("Let's try again, {$name}!");
+        break;
+    }
+    $i += 1;
+    if ($i > 2) {
+        line("Congratulations, {$name}!");
+    }
+}

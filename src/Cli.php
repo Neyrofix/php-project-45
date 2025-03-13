@@ -2,17 +2,16 @@
 
 /* Работа с командной строкой */
 
-
-
 namespace BrainGames\Cli;
 
 use function cli\line;
 use function cli\prompt;
 
-/* Описание функции */
+/* Приветствие и запрос имени */
 function greating()
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
+    return $name;
 }
