@@ -2,7 +2,6 @@
 
 namespace BrainGames\src\Games\Even;
 
-//require_once 'BrainGames\src\Engine\runGame';
 use function BrainGames\src\Engine\runGame;
 
 function even()
