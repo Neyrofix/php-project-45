@@ -4,7 +4,7 @@ namespace BrainGames\src\Games\Progression;
 
 use function BrainGames\src\Engine\runGame;
 
-function random_prog(int $start, int $step): array
+function pr_maker(int $start, int $step): array
 {
     $pr = [$start];
     for ($i = 1; $i < 10; $i++) {
@@ -13,18 +13,21 @@ function random_prog(int $start, int $step): array
     }
     return $pr;
 }
-print_r(random_prog(2, 5));
-/*
+
 function progression()
 {
     $greating = 'What number is missing in the progression?';
     $queAsk = [];
 
     for ($i = 0; $i < 3; $i++) {
-        $val1 = random_int(1, 100);
-        $val2 = random_int(1, 100);
-        $queAsk[] = ["{$val1} {$val2}",evklid($val1, $val2)];
+        $start = random_int(1, 30);
+        $step = random_int(1, 20);
+        $randomIndex = random_int(0, 9);
+        $randomProgression = pr_maker($start, $step);
+        $rightAnswer = $randomProgression[$randomIndex];
+        $randomProgression[$randomIndex] = '..';
+        $string = implode(' ', $randomProgression);
+        $queAsk[] = [$string, strval($rightAnswer)];
     }
     runGame($greating, $queAsk);
 }
-*/
