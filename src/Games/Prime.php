@@ -4,7 +4,7 @@ namespace BrainGames\src\Games\Prime;
 
 use function BrainGames\src\Engine\runGame;
 
-function is_prime($n)
+function isPrime($n)
 {
     if ($n <= 1) {
         return false;
@@ -30,7 +30,7 @@ function prime()
 
     for ($i = 0; $i < 3; $i++) {
         $val = random_int(1, 100);
-        if (is_prime($val)) {
+        if (isPrime($val)) {
             $queAsk[] = [$val, 'yes'];
         } else {
             $queAsk[] = [$val, 'no'];
