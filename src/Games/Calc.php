@@ -4,7 +4,7 @@ namespace BrainGames\src\Games\Calc;
 
 use function BrainGames\src\Engine\runGame;
 
-function calculate($val1, $val2, $randomOperation)
+function calculate(int $val1, int $val2, string $randomOperation)
 {
     switch ($randomOperation) {
         case '+':

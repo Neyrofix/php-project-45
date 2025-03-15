@@ -4,7 +4,7 @@ namespace BrainGames\src\Games\Prime;
 
 use function BrainGames\src\Engine\runGame;
 
-function isPrime($n)
+function isPrime(int $n)
 {
     if ($n <= 1) {
         return false;
