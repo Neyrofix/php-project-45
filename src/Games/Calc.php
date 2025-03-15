@@ -9,13 +9,10 @@ function calculate(int $val1, int $val2, string $randomOperation)
     switch ($randomOperation) {
         case '+':
             return ["{$val1} + {$val2}", strval($val1 + $val2)];
-            break;
         case '-':
             return ["{$val1} - {$val2}", strval($val1 - $val2)];
-            break;
         case '*':
             return ["{$val1} * {$val2}", strval($val1 * $val2)];
-            break;
     }
 }
 
