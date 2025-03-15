@@ -4,7 +4,7 @@ namespace BrainGames\src\Engine;
 
 use function cli\line;
 use function cli\prompt;
-use function BrainGames\Cli\greating;
+use function BrainGames\src\Cli\greating;
 
 function runGame(string $gameDescription, array $arr)
 {
