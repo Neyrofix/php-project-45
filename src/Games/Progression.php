@@ -4,7 +4,7 @@ namespace BrainGames\src\Games\Progression;
 
 use function BrainGames\src\Engine\runGame;
 
-function pr_maker(int $start, int $step): array
+function prMaker(int $start, int $step): array
 {
     $pr = [$start];
     for ($i = 1; $i < 10; $i++) {
