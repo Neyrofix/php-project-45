@@ -1,6 +1,14 @@
 {
     "name": "hexlet/code",
     "description": "first project on hexlet",
+    "bin": [
+        "bin/brain-games",
+        "bin/brain-even",
+        "bin/brain-calc",
+        "bin/brain-gcd",
+        "bin/brain-progression",
+        "bin/brain-prime"
+    ],
     "autoload": {
         "psr-4": {
             "Hexlet\\Code\\": "src/"
@@ -23,14 +31,6 @@
     "require": {
         "wp-cli/php-cli-tools": "^0.12.4"
     },
-    "bin": [
-        "bin/brain-games",
-        "bin/brain-even",
-        "bin/brain-calc",
-        "bin/brain-gcd",
-        "bin/brain-progression",
-        "bin/brain-prime"
-    ],
     "license": "MIT",
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.11"
