@@ -23,7 +23,7 @@ function progression()
         $start = random_int(1, 30);
         $step = random_int(1, 20);
         $randomIndex = random_int(0, 9);
-        $randomProgression = pr_maker($start, $step);
+        $randomProgression = prMaker($start, $step);
         $rightAnswer = $randomProgression[$randomIndex];
         $randomProgression[$randomIndex] = '..';
         $string = implode(' ', $randomProgression);
