@@ -2,7 +2,7 @@
 
 /* Работа с командной строкой */
 
-namespace BrainGames\src\Games\Cli;
+namespace BrainGames\src\Cli;
 
 use function cli\line;
 use function cli\prompt;
